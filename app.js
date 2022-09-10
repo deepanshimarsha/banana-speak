@@ -18,7 +18,7 @@ function errorHandler(error){
 }
 
 function clickEventHandler(){
-    var inputText = txtInput.value
+    var inputText = txtInput.innerText
 
     fetch(getRequestUrl(inputText))
     .then(Response => Response.json())
